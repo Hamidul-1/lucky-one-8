@@ -3,6 +3,7 @@ import Cart from '../Cart/Cart';
 import Product from '../Product/Product';
 import './Shop.css';
 
+
 const Shop = () => {
     const [products, setProducts] = useState([]);
     const [cart, setCart] = useState([]);
@@ -16,7 +17,9 @@ const Shop = () => {
     const handleAddToCart = (product) =>{
         console.log(product);
         const newCart = [...cart,product];
-        setCart(newCart);
+        setCart(newCart); 
+        
+
     }
 
     return (
@@ -38,3 +41,7 @@ const Shop = () => {
 };
 
 export default Shop;
+
+
+
+

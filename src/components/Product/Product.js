@@ -17,7 +17,7 @@ const Product = ({product, handleAddToCart}) => {
                 <p><small>Price: ${price}</small></p>
                 <p><small>Id: {id}</small></p>
             </div>
-            <button onClick={() => handleAddToCart(product)} className='btn-cart'>
+            <button onClick={() => handleAddToCart(product.name)} className='btn-cart'>
                 <p className='btn-text'>Add to cart</p>
                 <FontAwesomeIcon icon={faShoppingCart}></FontAwesomeIcon>
             </button>
@@ -26,4 +26,5 @@ const Product = ({product, handleAddToCart}) => {
     );
 };
 
-export default Product;
+export default Product; 
+
